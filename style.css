@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala:wght@400;700&display=swap');
+*{  
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #15141f ;
+    color: white;
+}
+/*Menu*/
+.Menu{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: center;
+    padding: 1rem;
+    margin: 5px;
+}
+.Menu h1{
+    font-size: 50px;
+    padding: 5px;
+}
+.Menu p{
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/*Barra de Navegacion*/
+#Secciones{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #2272FF;
+}
+#Secciones a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+/*Acerca de Mi*/
+.AcercaDeMi{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.AcercaDeMi h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 45px;
+    padding: 10px;
+    text-decoration: underline;
+}
+/*Datos Personales (Soy Dante...)*/
+.DatosPersonales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #2273ffd2;
+    border-radius: 1rem;
+    height: 250px;
+    width: 90%;
+    max-width: 750px;
+    justify-self: center;
+}
+.DatosPersonales h3{
+    padding: 5rem;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.DatosPersonales p{
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+/*Lenguajes de Programacion*/
+.Lenguajes {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.Lenguajes h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 45px;
+    padding: 10px;
+    text-decoration: underline;
+}
+/*Seccion donde estas las tarjetas de lenguajes*/
+.galeria{
+    border: 4px solid #2272FF;
+    border-radius: 1rem;
+    height: 800px;
+    
+    width: 90%;
+    max-width: 900px;
+    justify-self: center;
+    padding: 15px;
+    position: relative;
+    z-index: -1;
+}
+/*Tarjetas de lenguajes*/
+.Tarjeta{
+    height: max-content;
+    width: 220px;
+    align-content: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+}
+.Tarjeta h3{
+    font-size: 20px;
+    padding: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.Tarjeta p{
+    font-size: 18px;
+    padding: 5px;
+    /*Ver si existe otra mejor*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+/*Ajustes y decoracion de cada tarjeta*/
+#html{
+    box-shadow: 0px 0px 1rem rgb(255, 51, 0);
+    border: 2px solid rgba(255, 51, 0, 0.85);
+    top: 50px;
+    left: 160px;
+}
+#css{
+    box-shadow: 0px 0px 1rem rgb(0, 255, 255);
+    border: 2px solid rgb(0, 255, 255, 0.85);
+    top: 270px;
+    right: 120px;
+}
+#js{
+    box-shadow: 0px 0px 1rem rgb(255, 217, 0);
+    border: 2px solid rgb(255, 217, 0, 0.85);
+    bottom: 50px;
+    left: 160px;
+}
+/*Informacion de las clases*/
+.InfoClases{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.InfoClases h2{
+        font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 45px;
+    padding: 10px;
+    text-decoration: underline;
+}
+/*Tarjetas de informacion de las clases*/
+/*Hacer que cuando se pase el Mouse por .TarjetaDetalle se agrande el icono (js)*/
+.TarjetaDetalles{
+    border: 2px solid #2272FF;
+    height: max-content;
+    width: 90%;
+    max-width: 600px;
+    align-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    justify-self: center;
+}
+.TarjetaDetalles h3{
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.TarjetaDetalles P {
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    /*Ver si existe otra mejor*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+/*Inscripcion a las clases*/
+.Inscripcion{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.Inscripcion h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 45px;
+    padding: 10px;
+    text-decoration: underline;
+}
+/*Pocisionamiento de las opciones de inscripcion*/
+.Opciones{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+.Opciones > div {
+    width: 45%;}
+.Opciones p{
+        font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    /*Ver si existe otra mejor*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.Opciones span{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    padding: 5px;
+}
+.Opciones button{
+    width: 200px;
+    height: 30px;
+    background-color: #2272FF;
+    border: 3px solid #2272FF;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Opciones a{
+    color: black;
+
+}
+.Opciones button:focus{
+    width: 220px;
+    height: 40px;
+    border-color: #0f4db8;
+}
+
+@media(max-width: 768px){
+    .DatosPersonales{
+        display: block;
+}
+.DatosPersonales h3{
+    padding: 4rem;
+}
+    #Secciones a{
+    font-size: 23px;
+    }
+/*Acerca de MI*/
+    .DatosPersonales{
+        height: auto;
+    }
+.DatosPersonales h3{
+    padding: 50px;
+}
+.DatosPersonales p{
+    padding: 10px;
+}
+
+/*galeria*/
+.galeria{
+    position: static;
+}
+.Tarjeta{
+    position: static;
+    padding: 10px;
+    justify-self: center;
+    margin: 30px;
+}
+    .Opciones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media(max-width: 480px){
+    .DatosPersonales{
+        display: block;
+}
+    #Secciones {
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 12px;              
+    }
+    #Secciones a{
+    font-size: 20px;
+    }
+
+    .DatosPersonales{
+        height: auto;
+    }
+    .Opciones{
+        flex-direction: column;
+        align-items: center;
+    }
+}
